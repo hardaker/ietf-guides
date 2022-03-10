@@ -69,6 +69,7 @@ AREA_OPS = "OPS"
 AREA_RTG = "RTG"
 AREA_SEC = "SEC"
 AREA_TSG = "TSG"
+AREA_RES = "RES"
 AREA_UNKNOWN = "UNKNOWN"
 
 IETF_AREAS = (
@@ -78,6 +79,7 @@ IETF_AREAS = (
     (AREA_RTG, "Routing"),
     (AREA_SEC, "Security"),
     (AREA_TSG, "Transport"),
+    (AREA_RES, "IRTF"),
     (AREA_UNKNOWN, "I don't know yet")
 )
 
