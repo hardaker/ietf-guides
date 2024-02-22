@@ -153,6 +153,7 @@ class Guide(models.Model):
                                        blank=True)
     help_frequency = models.CharField("How frequently are you willing to be a guide?", max_length=32, choices=HELP_CHOICES, default=HELP_NO)
     keep_for_nexttime = models.BooleanField("Should we keep your registration data around for future participation in the guides program?", default=False)
+    remote = models.CharField('Will you be attending remotely?', max_length=32, choices=YN_CHOICES, default=YNM_NO)
 
     def __str__(self):
         return "%s %s <%s>" % (self.given_name, self.surname, self.email)
